@@ -22,18 +22,20 @@ local function passwordCheck()
 	term.setCursorPos(16, 9)
 	-- Read password input without displaying it
 	term.setTextColor(colors.white)
-	local password = read("*")
+	local password = read()
 
 	-- Check if the entered password is correct
 	if password == Password then
-	  term.setBackgroundColor(colors.black)
-	  term.setCursorPos(16, 9)
+	  term.clear()
+	  term.setBackgroundColor(colors.gray)
+	  term.setCursorPos(16, 8)
 	  print("Access Granted!")
 	  sleep(1.5)
 	  dofile("OS/Password/Preps.lua")
 	else
-	  term.setBackgroundColor(colors.black)
-	  term.setCursorPos(16, 9)
+	  term.clear()
+	  term.setBackgroundColor(colors.gray)
+	  term.setCursorPos(16, 8)
 	  print("Access Denied!")
 	  sleep(1.5)  -- Pause for 4 seconds
 	  term.clear()
