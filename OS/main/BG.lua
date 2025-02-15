@@ -28,7 +28,7 @@ local function drawButton(btn, highlighted)
         term.setCursorPos(btn.x, btn.y + i)
         term.write(string.rep(" ", btn.width))
     end
-    term.setCursorPos(btn.x + (btn.width - #btn.label) // 2, btn.y + btn.height // 2)
+    term.setCursorPos(btn.x + math.floor((btn.width - #btn.label) / 2), btn.y + math.floor(btn.height / 2))
     term.write(btn.label)
 end
 
