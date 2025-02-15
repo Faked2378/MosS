@@ -2,7 +2,6 @@
 
 **Installation guide:**
 *make a pc (duh)*
-
-
-
-*run pastebin run qRG7TT2M*
+*input: pastebin run fTqNBZPb*
+*restart pc*
+*default password: Password*
