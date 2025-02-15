@@ -1,1 +1,1 @@
-dofile("OS/Password/BG.lua")
+dofile("/OS/Password/BG.lua")
