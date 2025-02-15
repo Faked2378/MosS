@@ -12,7 +12,7 @@ function loadAnim()
             sleep(1)  -- Adjust the sleep duration as needed
         end
     end
-    dofile("OS/main/BG.lua")
+    dofile("/OS/main/BG.lua")
 end
 
 loadAnim()
