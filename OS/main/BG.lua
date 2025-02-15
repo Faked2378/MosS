@@ -37,7 +37,7 @@ local function drawMenu()
     term.setBackgroundColor(bgColor)
     term.clear()
     term.setTextColor(textColor)
-    term.setCursorPos(w // 2 - 5, 2)
+    term.setCursorPos(math.floor(w / 2) - 5, 2)
     term.write("MosS")
 
     for _, btn in ipairs(buttons) do
