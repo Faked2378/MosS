@@ -1,6 +1,6 @@
 local function passwordCheck()
 	-- Grey Background Script
-	local Password = "moneymate"
+	local Password = "Password"
 	
 	-- Set the background color to grey
 	term.setBackgroundColor(colors.gray)
