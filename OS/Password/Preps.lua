@@ -7,7 +7,7 @@ function loadAnim()
     for count = 1, 3 do
         for dot = 1, 3 do
             term.clear()
-            term.setCursorPos(1, 15)
+            term.setCursorPos(15, 15)
             print("Loading " .. string.rep(".", dot))
             sleep(1)  -- Adjust the sleep duration as needed
         end
