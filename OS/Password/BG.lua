@@ -1,9 +1,15 @@
+local function setScreen(colour)
+	term.clear()
+	term.setCursorPos(1,1)
+	term.setBackground(colour)
+	term.setCursorPos(50,50)
+
 local function passwordCheck()
 	-- Grey Background Script
 	local Password = "Password"
 	
 	-- Set the background color to grey
-	term.setBackgroundColor(colors.gray)
+	setScreen(term.gray)
 	
 	-- Clear the screen
 	term.clear()
@@ -27,14 +33,14 @@ local function passwordCheck()
 	-- Check if the entered password is correct
 	if password == Password then
 	  term.clear()
-	  term.setBackgroundColor(colors.gray)
+	  setScreen(term.gray)
 	  term.setCursorPos(16, 8)
 	  print("Access Granted!")
 	  sleep(1.5)
 	  dofile("OS/Password/Preps.lua")
 	else
 	  term.clear()
-	  term.setBackgroundColor(colors.gray)
+	  setScreen(term.gray
 	  term.setCursorPos(16, 8)
 	  print("Access Denied!")
 	  sleep(1.5)  -- Pause for 4 seconds
